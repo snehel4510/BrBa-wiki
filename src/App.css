@@ -97,7 +97,7 @@
   }
   
   .card:hover .card-inner {
-    transform: rotateY(180deg);
+    transform: rotateY(-160deg);
   }
   
   .card-front,

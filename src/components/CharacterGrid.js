@@ -1,9 +1,10 @@
 import CharItems from "./CharItems";
+import Spinner from "./Spinner";
 
 const CharacterGrid = ({ isLoading, items }) => {
     return ( 
         <div>
-            {isLoading ? <h2>Loading...</h2> : 
+            {isLoading ? <Spinner /> : 
             <section className="cards">
                 {items.map(item => <CharItems key={item.char_id} item={item} />)}
             </section>}
